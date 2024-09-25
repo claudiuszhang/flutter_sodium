@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+
 import 'toc.dart';
 
 class SampleWidget extends StatelessWidget {
@@ -11,7 +12,7 @@ class SampleWidget extends StatelessWidget {
       Padding(
           padding: EdgeInsets.symmetric(vertical: 16.0),
           child: Text(sample.title ?? '(no title)',
-              style: Theme.of(context).textTheme.headline5)),
+              style: Theme.of(context).textTheme.headlineSmall)),
       if (sample.description != null && sample.description!.length > 0)
         Padding(
           padding: EdgeInsets.only(bottom: 16.0),
@@ -75,7 +76,7 @@ class _SampleRunnerState extends State<SampleRunner> {
                   Padding(
                       padding: EdgeInsets.only(bottom: 16.0),
                       child: Text('Result',
-                          style: Theme.of(context).textTheme.headline6)),
+                          style: Theme.of(context).textTheme.titleLarge)),
                   // display progress only for async code snippets
                   if (widget.sample.funcAsync != null &&
                       snapshot.connectionState != ConnectionState.done)

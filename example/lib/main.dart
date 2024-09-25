@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_sodium/flutter_sodium.dart';
+
 import 'toc.dart';
 import 'topic_page.dart';
 
@@ -46,7 +47,7 @@ class HomePage extends StatelessWidget {
                                       title: Text(topic.title,
                                           style: Theme.of(context)
                                               .textTheme
-                                              .headline6))
+                                              .titleLarge))
                                 else
                                   ListTile(
                                       title: Text(topic.title),

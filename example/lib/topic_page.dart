@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_sodium_example/sample_widget.dart';
 import 'package:url_launcher/url_launcher.dart';
+
 import 'toc.dart';
 
 class TopicPage extends StatelessWidget {
@@ -34,7 +35,9 @@ class TopicPage extends StatelessWidget {
                                 child: Text(
                                   'More information',
                                   style: TextStyle(
-                                      color: Theme.of(context).accentColor),
+                                      color: Theme.of(context)
+                                          .colorScheme
+                                          .secondary),
                                 ),
                                 onTap: () => launch(topic.url!)),
                           ),
